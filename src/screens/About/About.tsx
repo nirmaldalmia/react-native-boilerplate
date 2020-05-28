@@ -1,12 +1,26 @@
 import React from 'react';
 import {View, Text} from 'react-native';
+import {_retrieveData} from '../../storage';
 
-const About = () => {
-  return (
-    <View>
-      <Text>About</Text>
-    </View>
-  );
-};
+export default class About extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      test: '',
+    };
+  }
 
-export default About;
+  async componentDidMount() {
+    const value = await _retrieveData('test');
+    this.setState({test: value});
+  }
+
+  render() {
+    return (
+      <View>
+        <Text>About</Text>
+        <Text>{`String from Async storage: ${this.state.test}`}</Text>
+      </View>
+    );
+  }
+}
