@@ -1,18 +1,18 @@
-import React from 'react';
-import {View, Text} from 'react-native';
-import {_retrieveData} from '../../storage';
+import React from "react";
+import { View, Text } from "react-native";
+import { _retrieveData } from "../../storage";
 
 export default class About extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      test: '',
+      test: "",
     };
   }
 
   async componentDidMount() {
-    const value = await _retrieveData('test');
-    this.setState({test: value});
+    const value = await _retrieveData("test");
+    this.setState({ test: value });
   }
 
   render() {
