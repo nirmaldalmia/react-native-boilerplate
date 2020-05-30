@@ -41,6 +41,9 @@ Assuming you have all the requirements installed, you can setup and run the proj
 -   `npm run android`  to run the Android application (remember to start a simulator or connect an Android phone)
 - `npm run ios` to run the iOS application (remember to start a simulator or connect an iPhone)
 
+## Troubleshooting
+If your application fails to start after using the `npm run rename` command, please take a look at [this issue](https://github.com/junedomingo/react-native-rename/issues/72)
+
 
 ## :computer: Contributing
 
