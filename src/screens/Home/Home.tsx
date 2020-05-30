@@ -1,8 +1,8 @@
 import React from "react";
 import { View, Text, Button } from "react-native";
 import { inject, observer } from "mobx-react";
-import { _storeData } from "../../storage";
-import RNLogo from "./rn_logo.svg";
+import { _storeData } from "storage";
+import RNLogo from "assets/img/rn_logo.svg";
 
 @inject("counterStore")
 @observer

@@ -1,6 +1,6 @@
 import React from "react";
 import { View, Text } from "react-native";
-import { _retrieveData } from "../../storage";
+import { _retrieveData } from "storage";
 
 export default class About extends React.Component {
   constructor(props) {
